@@ -1,0 +1,145 @@
+.calculator {
+    text-align: center;
+    margin: 0 auto;
+    position: relative;
+    width: 400px;
+    height: 550px;
+    
+    
+}
+
+.layer1{
+    background-color: #D9E0E8;
+    margin: 0 620px;
+    height: 520px;
+    border-radius: 20px;
+    box-shadow: inset 5px 5px 12px #fff, 5px 5px 12px rgb(0, 0, 0, 0.16);
+    
+    padding: 27px;
+    position: absolute;
+    top: 100px;
+     
+}
+
+.calculator-screen {
+    width: 98%;
+    height: 100px;
+    background-color: #252525;
+    color: #fff;
+    text-align: right;
+    font-size: 36px;
+    padding: 0 20px;
+    box-sizing: border-box;
+    border-radius: 15px 15px;
+}
+.calculator-keys {
+    width: 100%;
+  
+}
+
+.row {
+    display: flex;
+}
+
+button {
+    height: 80px;
+    background-color: #4A5980;
+    border: 1px solid #4A5980;
+    font-size: 32px;
+    color: #fff;
+    width: 25%;
+    
+}
+
+.all-clear, .zero-btn {
+    width:  50%;
+    border-radius: 15px 15px;
+    margin: 3px;
+}
+
+.operator, .equal-sign {
+    background-color:  #d39cd6;
+    border-radius: 15px 15px;
+    margin: 3px;
+    border: 1px solid #d39cd6;
+}
+
+button:hover {
+    background-color: darkgrey;
+    
+}
+
+.operator:hover, .equal-sign:hover {
+    background-color: #F0D7F1;
+   
+}
+.number, .percentage, .decimal {
+    border-radius: 15px 15px;
+    margin: 3px;
+}
+body {
+    background-color:rgba(89, 34, 94, 0.288);
+    height: 100%;
+}
+
+.footer-wrapper {
+    display: flex;
+    justify-content: space-between;
+    height: 400px;
+    
+}
+.footer-wrapper p {
+    display: flex;
+    margin-top: 80px;
+    font-size: 13px;
+    margin: 700px 747px; 
+    white-space: nowrap;  
+    
+}
+
+
+@media screen and (min-width: 1025px) and (max-width: 1299px) {
+    .layer1{
+        display: flex;
+        justify-content: center;
+        margin-left: 18rem;
+        
+    }
+    .footer-wrapper p {
+        margin-left: 28rem;
+    }
+  }
+  
+  @media screen and (min-width: 769px) and (max-width: 1024px) {
+    .layer1{
+        display: flex;
+        justify-content: center;
+        margin-left: 13rem;
+    }
+    .footer-wrapper p {
+        margin-left: 22rem;
+      
+    }
+  }
+  @media screen and (min-width: 481px) and (max-width: 768px) {
+    .layer1{
+        display: flex;
+        justify-content: center;
+        margin-left: 0.5rem;
+    }
+    .footer-wrapper p {
+        margin-left: 9rem;
+      
+    }
+  }
+  @media screen and (min-width: 320px) and (max-width: 480px) {
+    .layer1{
+        display: flex;
+        justify-content: center;
+        margin-left: 2rem;
+    }
+    .footer-wrapper p {
+        margin-left: 10rem;
+
+    }
+}
